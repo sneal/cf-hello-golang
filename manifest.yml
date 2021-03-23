@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-hello-golang
+  memory: 64MB
+  random-route: true
+  stack: cflinuxfs3
+  path: ./out
+  command: ./cf-hello-golang
+  buildpacks:
+  - binary_buildpack
